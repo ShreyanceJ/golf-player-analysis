@@ -57,7 +57,6 @@ At the end of the notebook, I built a widget-based dashboard (using `ipywidgets`
 
 ## ⚡ How to Run
 
-### 1️⃣ Clone the repo:
 ```bash
 git clone https://github.com/yourusername/golf-player-analysis.git
 cd golf-player-analysis
