@@ -1,20 +1,67 @@
-# Golf Player Performance Analysis
+# Golf Player Performance Analysis (2015–2022)
 
-This project analyzes professional golf player performance using historical data. It includes:
-- Clustering of players based on key performance indicators.
-- Visualizations such as radar charts and time series plots.
-- A dashboard (Gradio/Widgets) for interactive exploration.
+This project analyzes PGA Tour golf player performance data from 2015 to 2022. The goal is to uncover patterns in player strengths, segment players into meaningful clusters, and provide an interactive tool for analyzing player metrics.
 
-## Dataset
-- **Golf.csv**: Contains player performance data (strokes gained, positions, tournament info, etc.)
+---
 
-## Key Features
-- K-Means clustering to group players into segments (e.g., Ball Strikers, Putting Specialists)
-- Radar chart comparison of individual players vs cluster averages
-- Time series analysis for putting and approach game trends
-- Summary stats: wins, tournaments played, cluster info
+## 📌 Project Motivation
 
-## How to Run
+### Why this dataset?
+I chose the [PGA Tour Golf Data 2015-2022](https://www.kaggle.com/datasets/robikscube/pga-tour-golf-data-20152022) from Kaggle because:
+- It provides detailed performance metrics (e.g., strokes gained in different aspects of the game) over multiple seasons.
+- It covers a long enough time span (8 seasons) to identify trends and player consistency.
+- Golf performance data is rich in potential for clustering, time series, and comparative analytics.
+
+### Why this problem statement?
+I aimed to answer:
+- **Can we segment players based on their playing style and strengths?**
+- **How can we visually compare players within these segments?**
+- **Can we make performance analysis easier with an interactive tool?**
+
+By doing this, we can:
+- Help fans, analysts, and coaches quickly identify player archetypes.
+- Enable easy comparisons of players’ strengths and weaknesses.
+- Track individual or group performance trends over time.
+
+---
+
+## 🔍 Approach
+
+### Data preparation
+- Cleaned the dataset to handle missing values.
+- Focused on key metrics: strokes gained in approach, putting, off the tee, and around the green.
+- Aggregated data at the player-season level to provide stable performance indicators.
+
+### Clustering
+- Applied **K-Means clustering** to group players into segments:
+  - *Ball Strikers*
+  - *Putting Specialists*
+  - *Short Game Experts*
+  - *Scrappy All-Rounders*
+- Each cluster represents a distinct player profile based on strokes gained data.
+
+### Visualizations
+- **Radar charts:** Compare an individual player’s metrics to the average of their cluster.
+- **Time series plots:** Show performance trends over seasons (e.g., strokes gained in approach vs. putting).
+- **Summary cards:** Show cluster info, wins, tournaments played.
+
+### Interactive widget
+At the end of the notebook, I built a widget-based dashboard (using `ipywidgets` / `Gradio`) to:
+- Select a player from a dropdown.
+- View their cluster, radar chart comparison, time series of key metrics.
+- Gain insights quickly without manually filtering or plotting.
+
+💡 *The widget makes it easy for users to explore data on different players without needing to modify code.*
+
+---
+
+## ⚡ How to Run
+
+### 1️⃣ Clone the repo:
+```bash
+git clone https://github.com/yourusername/golf-player-analysis.git
+cd golf-player-analysis
+
 1. Download or clone this repository.
 2. Install dependencies:
     ```bash
