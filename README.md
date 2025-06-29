@@ -72,6 +72,8 @@ cd golf-player-analysis
     ```
 ```
 
+Or open it in Google Colab (recommended).
+
 ## Requirements
 See `requirements.txt`.
 
