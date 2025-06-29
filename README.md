@@ -57,11 +57,22 @@ This project includes an interactive dashboard (via `Gradio` / `Streamlit`):
 
 ## ⚡ How to Run
 
-### 1️⃣ Clone the repository
+### 1. Clone the repository
 ```bash
 git clone https://github.com/yourusername/golf-player-analysis.git
 cd golf-player-analysis
 ```
+
+### 2. Install dependencies
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Run the script
+```bash
+python golf-player-analysis.py
+```
+
 ## Requirements
 See requirements.txt.
 
