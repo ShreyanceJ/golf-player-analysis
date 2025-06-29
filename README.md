@@ -45,37 +45,25 @@ By doing this, we can:
 - **Time series plots:** Show performance trends over seasons (e.g., strokes gained in approach vs. putting).
 - **Summary cards:** Show cluster info, wins, tournaments played.
 
-### Interactive widget
-At the end of the notebook, I built a widget-based dashboard (using `ipywidgets` / `Gradio`) to:
+### Interactive tool
+This project includes an interactive dashboard (via `Gradio` / `Streamlit`):
 - Select a player from a dropdown.
 - View their cluster, radar chart comparison, time series of key metrics.
-- Gain insights quickly without manually filtering or plotting.
+- Quickly explore player data without modifying code.
 
-💡 *The widget makes it easy for users to explore data on different players without needing to modify code.*
+💡 *Run the Python script and follow the browser link to explore the dashboard.*
 
 ---
 
 ## ⚡ How to Run
 
+### 1️⃣ Clone the repository
 ```bash
 git clone https://github.com/yourusername/golf-player-analysis.git
 cd golf-player-analysis
-
-1. Download or clone this repository.
-2. Install dependencies:
-    ```bash
-    pip install -r requirements.txt
-    ```
-3. Open and run the notebook:
-    ```bash
-    jupyter notebook Golf_Final.ipynb
-    ```
 ```
-
-Or open it in Google Colab (recommended).
-
 ## Requirements
-See `requirements.txt`.
+See requirements.txt.
 
 ## License
 MIT License (see LICENSE file).
